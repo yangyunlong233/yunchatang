@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+    .expression {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(../../assets/img/expression_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        &-lines {
+            position: absolute;
+            left: 29.5%;
+            top: 11.5%;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+
+            .line {
+                position: absolute;
+                border-top: 1px solid rgba(#fff, .1);
+                transform: rotate(45deg);
+                transform-origin: left top;
+                width: 100vw;
+            }
+
+            .line1 {
+                left: 73%;
+                top: 0;
+            }
+
+            .line2 {
+                left: 73%;
+                top: 62%;
+
+            }
+
+            .line3 {
+                left: 0;
+                top: 62%;
+            }
+        }
+
+        &-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 4.5rem;
+
+            .slider {
+                li {
+                    .cover {
+                        position: absolute;
+                        z-index: 9;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-40%, -70%);
+                        width: 50vw;
+                        height: 55vh;
+                    }
+
+                    .bg {
+                        position: absolute;
+                        top: -1vh;
+                        right: -1vw;
+                        height: 15vh;
+                    }
+
+                    .tt {
+                        position: absolute;
+                        top: 35%;
+                        left: 10%;
+
+                        i,
+                        p,
+                        h1 {
+                            display: block;
+                            color: rgba(#fff, .9);
+                            text-align: center;
+                            font-weight: 300;
+                        }
+
+                        i {
+                            font-size: 1rem;
+                            letter-spacing: .5em;
+                            text-indent: -.5em;
+                            direction: rtl;
+                        }
+
+                        h1 {
+                            font-size: 3rem;
+                            font-weight: bold;
+                            padding: 1rem 0;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                            letter-spacing: .8em;
+                            text-indent: -.8em;
+                            direction: rtl;
+                        }
+                    }
+
+                    .txs {
+                        position: absolute;
+                        top: 73%;
+                        left: 55%;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                        color: rgba(#fff, 1);
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        position: absolute;
+        bottom: 1vw;
+        left: calc(3vw + 4.5rem);
+
+        img {
+            width: 4vw;
+        }
+    }
+}

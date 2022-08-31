@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .wechat-code {
+        position: relative;
+        left: -.6rem;
+        width: 10rem;
+
+        // text-align: center;
+        img {
+            width: 100%;
+        }
+
+        span {
+            display: inline-block;
+            font-size: 1.2rem;
+            color: rgba(#444, .7);
+            text-indent: .5rem;
+        }
+    }
+
+    .business {
+        &-container {
+            position: relative;
+            margin-left: 4.5rem;
+            padding: 5vw;
+            // background: rgba(red, .2);
+
+            .flex-content {
+                .cover {
+                    position: relative;
+                    width: 100%;
+                    height: 26vh;
+                    background-image: url(../../assets/img/business_cover.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 145% auto;
+                    background-position: left bottom;
+
+                    .type {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: -6vh;
+                        width: 80%;
+                        background: rgba(#262626, 1);
+                        text-align: center;
+                        padding: 2rem 0;
+                        border-radius: 1rem;
+
+                        span {
+                            font-size: 1.4rem;
+                            color: #fff;
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+
+                .content {
+                    padding: 3vh 0;
+                    width: auto;
+
+                    i {
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        color: rgba(#444, .6);
+                    }
+
+                    h1 {
+                        font-size: 7vh;
+                        font-weight: bold;
+                    }
+
+                    h2 {
+                        font-size: 2.5vh;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .features {
+                padding: 7vh 0 2vh;
+                width: auto;
+
+                .item {
+                    width: 100%;
+                    margin: 3vh 0;
+
+                    img {
+                        display: inline-block;
+                        height: 4vh;
+                        vertical-align: middle;
+                    }
+
+                    h3 {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        padding-left: .6rem;
+                    }
+
+                    i,
+                    p {
+                        display: block;
+                        padding-left: 3.4rem;
+                    }
+
+                    i {
+                        font-size: 1rem;
+                        color: rgba(#444, .6);
+                        font-weight: 300;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        padding-top: .5rem;
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .logo {
+                height: 6vh;
+                margin: 0 0 3vh 0;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

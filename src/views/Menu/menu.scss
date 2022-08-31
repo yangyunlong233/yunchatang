@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+    .menu {
+        &-container {
+            position: absolute;
+            z-index: 999;
+            top: 30vh;
+            left: 8vw;
+            right: 5vw;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            li:hover,
+            li.current {
+                transition: border 1s;
+                border-top: 1px solid rgba(#fff, 1);
+            }
+
+            li {
+                transition: border 1s;
+                width: 12vw;
+                height: 12vw;
+                border-radius: 12vw;
+                border-top: 1px solid rgba(#fff, 0);
+
+                a {
+                    display: block;
+                    margin: 4vw auto 0;
+                    width: 5vw;
+                    color: rgba(#fff, .7);
+                }
+
+                span {
+                    font: bold 1.4rem 'Arial';
+                    color: inherit;
+                }
+
+                h1 {
+                    font: bold 1.8rem 'Source Han Sans CN';
+                    color: rgba(#fff, 1);
+                }
+
+                h2 {
+                    font: 1.2rem 'Arial';
+                    text-transform: uppercase;
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .logo {
+        position: absolute;
+        bottom: 1vw;
+        left: calc(3vw + 4.5rem);
+
+        img {
+            width: 4vw;
+        }
+    }
+
+    .leaf {
+        position: fixed;
+        z-index: 9;
+        right: -45vw;
+    }
+}

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*
+    Standart style
+    @Author: ch233
+*/
+
+.red-wall {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/img/red_wall.jpg');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+}
+
+.red-wall-pattern {
+    position: fixed;
+    bottom: 10rem;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../../assets/img/red_wall_pattern.png);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.cartoon {
+    position: fixed;
+    bottom: 11rem;
+    right: 5rem;
+    width: 15vw;
+
+    img {
+        width: 100%;
+    }
+}
+
+.wall-top-shadow {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    background-image: url('../../assets/img/wall_top_shadow.png');
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+}
+
+.logo-lite {
+    position: absolute;
+    bottom: 1vw;
+    left: calc(3vw + 4.5rem);
+
+    img {
+        width: 4vw;
+    }
+}
+
+.copy-lite {
+    position: absolute;
+    bottom: 1.5vw;
+    right: 2vw;
+    font-size: 1.2rem;
+
+    &.lighten {
+        color: #fff;
+    }
+
+    &.darken {
+        color: rgba(#262626, .8);
+    }
+}

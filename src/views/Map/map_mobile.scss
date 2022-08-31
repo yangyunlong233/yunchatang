@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .map {
+        &-container {
+            position: relative;
+            margin-left: 4.5rem;
+            padding: 5vh 5vw;
+
+            i,
+            h1,
+            img.cover,
+            .content {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            i {
+                font-size: 1.2rem;
+                color: rgba(#444, .5);
+            }
+
+            h1 {
+                font-size: 6vh;
+                font-weight: bold;
+                padding-bottom: 2vh;
+            }
+
+            img.cover {
+                border-radius: 1rem;
+            }
+
+            .content {
+                border-radius: 1rem;
+                padding: 3vh 0;
+                line-height: 2;
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .logo {
+                position: relative;
+                width: 5rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+    .about {
+        &-container {
+            position: absolute;
+            left: 4.5rem;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            // background: rgba(red, .2);
+
+            .flex-content {
+                display: flex;
+                flex-flow: row nowrap;
+                height: 62vh;
+
+                .cover {
+
+                    width: 58vw;
+                    height: 62vh;
+                    background-image: url(../../assets/img/about_cover_case.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: left bottom;
+                }
+
+                .content {
+                    align-self: flex-end;
+                    padding: 0 3vw 0 6vw;
+                    width: 32vw;
+
+                    i {
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        color: rgba(#444, .6);
+                    }
+
+                    h1 {
+                        font-size: 6rem;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        padding-top: 3rem;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                        line-height: 2;
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .tx {
+                width: 60vw;
+                font-size: 1.4rem;
+                font-weight: 300;
+                line-height: 2;
+                text-align: justify;
+                padding: 3rem 0 3rem 6vw;
+            }
+
+            .logo {
+                height: 6vh;
+                margin-left: 6vw;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+        &-bg {
+            position: absolute;
+            top: -2vh;
+            left: 37vw;
+            height: 60vh;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}

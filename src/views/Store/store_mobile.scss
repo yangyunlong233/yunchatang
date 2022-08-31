@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .store {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../../assets/img/lighten_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        &-container {
+            position: relative;
+            margin-left: 4.5rem;
+            // background: rgba(red, .1);
+
+            padding: 3rem 5vw;
+
+            i {
+                font-size: 1rem;
+                text-transform: uppercase;
+                color: rgba(#444, .6);
+            }
+
+            h1 {
+                font-size: 5vh;
+                font-weight: bold;
+            }
+
+            .city {
+                margin: 5vh 0;
+
+                img,
+                span {
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
+
+                img {
+                    height: 1.6rem;
+                }
+
+                span {
+                    font-size: 1.6rem;
+                }
+
+                span:nth-of-type(1) {
+                    font-weight: bold;
+                    font-size: 3rem;
+                }
+
+                span:nth-of-type(2) {
+                    font-weight: 300;
+                    color: rgba(#444, .5);
+                }
+            }
+        }
+
+        &-list {
+            width: 100%;
+
+            .item {
+                margin-bottom: 5vh;
+                width: 100%;
+                border: 1px solid rgba(#444, .1);
+                border-bottom: 1px solid rgba(#444, .6);
+                background: #fff;
+
+                .cover {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .sub {
+                    margin: 1rem 2rem;
+
+                    img {
+                        height: 1.6rem;
+                    }
+
+                    span {
+                        font-size: 1.6rem;
+                        margin: 0 1rem;
+                    }
+                }
+
+                .intro {
+                    margin: 2rem 2rem;
+                    font-size: 1.4rem;
+                    color: rgba(#444, .6);
+                    text-align: justify;
+                }
+
+                .area {
+                    position: relative;
+                    bottom: -1px;
+                    display: inline-block;
+                    width: 30%;
+                    margin: 0;
+                    padding: 1rem 2rem;
+                    font-size: 1.4rem;
+                    background: #dc453d;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

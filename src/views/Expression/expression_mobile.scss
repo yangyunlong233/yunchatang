@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .expression {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(../../assets/img/expression_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        &-lines {
+            display: none;
+        }
+
+        &-container {
+            position: relative;
+            margin-left: 4.5rem;
+
+            .slider {
+                position: relative;
+
+                li {
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+
+                    .cover {
+                        position: relative;
+                        z-index: 9;
+                        width: 100%;
+                    }
+
+                    .bg {
+                        position: absolute;
+                        top: -1vh;
+                        right: -1vw;
+                        height: 13vh;
+                    }
+
+                    .tt {
+                        position: relative;
+                        margin: 8vh 0 5vh;
+
+                        i,
+                        p,
+                        h1 {
+                            display: block;
+                            color: rgba(#fff, .9);
+                            text-align: center;
+                            font-weight: 300;
+                        }
+
+                        i {
+                            font-size: 1rem;
+                            letter-spacing: .5em;
+                            text-indent: -.5em;
+                            direction: rtl;
+                        }
+
+                        h1 {
+                            font-size: 3rem;
+                            font-weight: bold;
+                            padding: 1rem 0;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                            letter-spacing: .8em;
+                            text-indent: -.8em;
+                            direction: rtl;
+                        }
+                    }
+
+                    .txs {
+                        position: relative;
+                        margin: 5vh 5vw 5vh 25vw;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        color: rgba(#fff, 1);
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo-lite {
+        width: 5rem !important;
+        margin-left: 5vw !important;
+        margin-bottom: 5vh !important;
+        img {
+            width: 100% !important;
+        }
+    }
+}

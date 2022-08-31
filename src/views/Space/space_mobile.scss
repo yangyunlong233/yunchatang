@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .space {
+        &-lines {
+            position: fixed;
+            left: 4.5rem;
+            width: calc(100vw - 4.5rem);
+            height: 100vh;
+            overflow: hidden;
+
+            .line {
+                position: absolute;
+                border-top: 1px solid rgba(#444, .2);
+                transform: rotate(-45deg);
+                transform-origin: right top;
+                width: 100vw;
+            }
+
+            .line1 {
+                right: 70vw;
+                top: 0;
+            }
+
+            .line2 {
+                right: 22vw;
+                top: 0;
+            }
+
+            .line3 {
+                right: -28vw;
+                top: 0;
+            }
+        }
+
+        &-container {
+            position: absolute;
+            z-index: 9;
+            top: 0;
+            left: 4.5rem;
+            right: 0;
+            bottom: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            // background: rgba(red, .2);
+
+            .covers {
+                position: absolute;
+                top: 17vh;
+                width: 100%;
+                height: 27rem;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transition: opacity .5s;
+                }
+            }
+
+            .content {
+                padding: 5vh 5vw;
+
+                i {
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    color: rgba(#444, .6);
+                }
+
+                h1 {
+                    font-size: 7vh;
+                    font-weight: bold;
+                }
+
+                .txs {
+                    margin-top: 30rem;
+
+                    p {
+                        font-size: 1.4rem;
+                        line-height: 2;
+                        padding-bottom: 3rem;
+                    }
+                }
+
+                .logo {
+                    height: 6vh;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        &-bg {
+            position: fixed;
+            top: -2vh;
+            right: -2vw;
+            height: 60vh;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}

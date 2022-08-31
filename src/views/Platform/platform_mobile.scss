@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .platform {
+        &-buttons {
+            display: none;
+        }
+
+        &-slider {
+            width: 100%;
+            position: relative;
+            margin-bottom: calc(5rem + 5vh);
+
+            ul {
+                width: 100%;
+                height: 22.5rem;
+                position: relative;
+
+                li {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 22.5rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .tt {
+                        width: 65%;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: -4rem;
+                        background: #262626;
+                        padding: 1rem;
+                        border-radius: .5rem;
+
+                        p {
+                            width: 100%;
+                            font-size: 1.4rem;
+                            font-weight: bold;
+                            color: rgba(#fff, 1);
+                            margin-bottom: .5rem !important;
+                        }
+
+                        span {
+                            display: inline-block;
+                            margin-right: 2rem;
+                            font-size: 1.4rem;
+                            color: rgba(#fff, .6);
+                        }
+                    }
+                }
+            }
+
+            .pagenation {
+                position: absolute;
+                left: 0;
+                right: 0;
+
+                img {
+                    display: inline-block !important;
+                    height: 3rem;
+                    width: auto !important;
+                    margin: 0 1rem;
+                }
+
+                .prev {
+                    position: absolute;
+                    top: 1rem;
+                    left: 0;
+                }
+
+                .next {
+                    position: absolute;
+                    top: 1rem;
+                    right: 0;
+                }
+            }
+        }
+
+        &-container {
+            position: relative;
+            margin-left: 4.5rem;
+            padding: 3vh 5vw;
+            overflow-y: auto;
+            overflow-x: hidden;
+            // background: rgba(red, .2);
+
+            .content {
+
+                .left-column,
+                .right-column {
+                    margin-bottom: 2rem;
+                }
+
+                .left-column {
+                    width: 100%;
+
+                    i {
+                        display: block;
+                        font-size: 1.2rem;
+                        color: rgba(#444, .5);
+                        text-transform: uppercase;
+                    }
+
+                    h1 {
+                        font-size: 7vh;
+                        font-weight: bold;
+                    }
+
+                    h2 {
+                        font-size: 3rem;
+                        font-weight: bold;
+                        margin: 3rem 0;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        line-height: 1.5;
+                        text-align: justify;
+                        color: rgba(#444, .6);
+                    }
+
+                    img {
+                        height: 10vh;
+                    }
+                }
+
+                .right-column {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    img.spaces {
+                        display: block;
+                        margin: 5rem 0 2rem 40%;
+                        width: auto;
+                        height: 3vh;
+                    }
+
+                    h2 {
+                        font-size: 2.2rem;
+                        font-weight: bold;
+                        margin-bottom: 2rem;
+                    }
+
+                    h3 {
+                        font-size: 1.4rem;
+                        font-weight: bold;
+                        margin-bottom: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                        margin-bottom: 2rem;
+                        line-height: 2;
+                    }
+
+                    p.tt {
+                        font-weight: bold;
+                    }
+                }
+
+                .title-cover {
+                    position: absolute;
+                    top: -2vh;
+                    left: 0;
+                    right: 0;
+                }
+
+                .title-cover+.left-column {
+                    margin-top: 24rem;
+                }
+            }
+        }
+    }
+}

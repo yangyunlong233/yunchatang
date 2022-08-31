@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .about {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        &-container {
+            position: relative;
+            width: auto;
+            margin: 5vh 0 0 4.5rem;
+
+            .flex-content {
+                padding: 0 5vw 0 5vw;
+
+                .cover {
+                    width: 100%;
+                    height: 30vh;
+                    background-image: url(../../assets/img/about_cover_case.png);
+                    background-repeat: no-repeat;
+                    background-size: 145% auto;
+                    background-position: left bottom;
+                }
+
+                .content {
+
+                    i {
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        color: rgba(#444, .6);
+                    }
+
+                    h1 {
+                        font-size: 7vh;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        padding: 2rem 0;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 2;
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .tx {
+                padding: 2rem 5vw;
+                width: auto;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 2;
+                text-align: justify;
+            }
+
+            .logo {
+                height: 6vh;
+                margin: 0 0 5vh 5vw;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+        &-bg {
+            position: fixed;
+            top: -2vh;
+            right: -3vw;
+            height: 60vh;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}

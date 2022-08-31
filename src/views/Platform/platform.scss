@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+    .platform {
+        &-buttons {
+            position: absolute;
+            bottom: 1vw;
+            right: 1vw;
+            border-radius: 4px;
+            display: inline-block;
+            padding: 1rem;
+            background: rgba(#444, .6);
+            border: 1px solid rgba(#444, .5);
+
+            span {
+                display: inline-block;
+                padding: 0 1rem 0 .5rem;
+                margin: 0 .5rem 0 0;
+                border-right: 1px solid rgba(#fff, .6);
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            span:last-of-type {
+                border: 0;
+            }
+        }
+
+        &-slider {
+            width: 65%;
+            position: relative;
+            margin-bottom: 3rem;
+
+            ul {
+                width: 100%;
+                height: 48rem;
+                position: relative;
+
+                li {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 48rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .tt {
+                        width: 70%;
+                        position: absolute;
+                        bottom: -4rem;
+                        background: #262626;
+                        padding: 1rem;
+                        margin-left: 3rem;
+                        border-radius: .5rem;
+
+                        p {
+                            width: 100%;
+                            font-size: 1.4rem;
+                            font-weight: bold;
+                            color: rgba(#fff, 1);
+                            margin-bottom: .5rem !important;
+                        }
+
+                        span {
+                            display: inline-block;
+                            margin-right: 2rem;
+                            font-size: 1.4rem;
+                            color: rgba(#fff, .6);
+                        }
+                    }
+                }
+            }
+
+            .pagenation {
+                position: absolute;
+                bottom: -4rem;
+                right: 0;
+                width: 40%;
+                text-align: right;
+
+                img {
+                    display: inline-block !important;
+                    height: 3rem;
+                    width: auto !important;
+                    margin: 0 1rem;
+                }
+            }
+        }
+
+        &-container {
+            position: absolute;
+            top: 0;
+            left: 8vw;
+            right: 0;
+            bottom: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            // background: rgba(red, .2);
+
+            .content {
+                display: flex;
+                flex-flow: row wrap;
+
+                .left-column,
+                .right-column {
+                    margin-bottom: 5vh;
+                    align-self: flex-start;
+                }
+
+                .left-column {
+                    width: 25%;
+
+                    i {
+                        display: block;
+                        font-size: 1.2rem;
+                        color: rgba(#444, .5);
+                        text-transform: uppercase;
+                        margin-top: 5vh;
+                    }
+
+                    h1 {
+                        font-size: 6rem;
+                        font-weight: bold;
+                    }
+
+                    h2 {
+                        font-size: 3rem;
+                        font-weight: bold;
+                        margin: 3rem 0;
+                    }
+
+                    p {
+                        width: 70%;
+                        font-size: 1.2rem;
+                        line-height: 1.5;
+                        text-align: justify;
+                        color: rgba(#444, .6);
+                    }
+
+                    img {
+                        height: 10vh;
+                    }
+                }
+
+                .right-column {
+                    width: 75%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    img.spaces {
+                        display: block;
+                        margin: 3rem 0 6rem 28%;
+                        width: auto;
+                        height: 3vh;
+                    }
+
+                    h2 {
+                        width: 65%;
+                        font-size: 2.2rem;
+                        font-weight: bold;
+                        margin-bottom: 2rem;
+                    }
+
+                    h3 {
+                        font-size: 1.4rem;
+                        font-weight: bold;
+                        margin-bottom: 2rem;
+                    }
+
+                    p {
+                        width: 65%;
+                        font-size: 1.4rem;
+                        margin-bottom: 2rem;
+                        line-height: 2;
+                    }
+
+                    p.tt {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .menu {
+        &-container {
+            position: absolute;
+            z-index: 999;
+            top: 10vh;
+            left: 13vw;
+
+            li {
+                display: inline-block;
+                width: 30vw;
+                margin: 5vh 0 0 8vw;
+
+                a {
+                    display: block;
+                    margin: 4vw auto 0;
+                    color: rgba(#fff, .7);
+                }
+
+                span {
+                    font: bold 1.4rem 'Arial';
+                    color: inherit;
+                }
+
+                h1 {
+                    font: bold 1.8rem 'Source Han Sans CN';
+                    color: rgba(#fff, 1);
+                }
+
+                h2 {
+                    font: 1.2rem 'Arial';
+                    text-transform: uppercase;
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .wall-top-shadow {
+        height: 15vh;
+        background-image: url('../../assets/img/wall_top_shadow.png');
+        background-repeat: repeat-x;
+        background-size: 400% 100%;
+    }
+
+    .leaf {
+        position: fixed;
+        z-index: 9;
+        // transform-origin: right bottom;
+        transform: scale(.8);
+    }
+}

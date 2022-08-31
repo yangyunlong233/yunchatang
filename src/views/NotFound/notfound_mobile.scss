@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .notFound {
+
+        &-container {
+            position: relative;
+            width: auto;
+            margin-left: 4.5rem;
+            padding: 3vh 5vw;
+
+
+            img {
+                display: block;
+                width: 80%;
+                margin: 10vh auto 3vh;
+            }
+
+            .content {
+                text-align: center;
+
+                h1 {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    padding: 4vh 0 4vh;
+                }
+
+                span {
+                    display: inline-block;
+                    font-size: 1.6rem;
+                    padding: 0 1rem;
+                    margin: 0 1rem;
+                    color: rgba(#444, 1);
+                    cursor: pointer;
+
+                    a {
+                        font-size: inherit;
+                        color: inherit;
+                    }
+                }
+
+                span:first-of-type {
+                    padding-right: 3rem;
+                    border-right: 1px solid rgba(#444, .3)
+                }
+            }
+        }
+    }
+}

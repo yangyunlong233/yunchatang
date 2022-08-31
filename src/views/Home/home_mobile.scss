@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    .home-darken-mask {
+        display: none;
+    }
+
+    .cmpt-cartoon {
+        position: relative;
+        z-index: 99;
+        margin: -2vh 0 0 25vw;
+        transform: scale(.9);
+    }
+
+    .tansition-line {
+        &-horizontal {
+            display: none;
+        }
+
+        &-vertical {
+            display: none;
+        }
+    }
+
+    .red-wall-copy {
+        position: relative;
+        width: 75vw;
+        margin: 0 auto;
+        border-top: 1px solid #fff;
+
+        p {
+            color: #EEEFEF;
+            font-size: 1.2rem;
+        }
+
+        .add,
+        .icp {
+            margin: 3vh auto;
+            width: 100%;
+            // text-align: center;
+        }
+
+        .contax {
+            width: 100%;
+            margin: 3vh auto;
+            line-height: 2;
+        }
+
+        img {
+            height: 8rem;
+            margin-bottom: 5vh;
+        }
+    }
+
+    .home {
+        position: relative;
+        width: 100vw;
+        height: 100vh !important;
+        background-attachment: fixed !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .home-container {
+        position: relative;
+        z-index: 99;
+
+        .logo {
+            margin: 4vh auto;
+            width: 85vw;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .main-content {
+            margin: 4vh auto;
+            width: 85vw;
+        }
+
+        .slogen {
+            width: 100%;
+            font-size: 1.3rem;
+            margin: 4vh auto;
+            color: rgba(#fff, .7);
+            text-align: justify;
+        }
+
+        .sub-nav {
+            margin: 5vh auto;
+            text-align: center;
+
+            li {
+                margin: 2vh auto;
+                display: block;
+                border: 1px solid rgba(#fff, .5);
+                background: rgba(#fff, .1);
+                border-radius: 1rem;
+                padding: 2vh 0;
+
+                a {
+                    color: #fff;
+                }
+
+                img,
+                span {
+                    display: inline-block;
+                }
+
+                img {
+                    height: 1.6rem;
+                }
+
+                span {
+                    margin-left: .6rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .activity {
+        &-buttons {
+            margin: 8vh auto;
+            width: 60vw;
+            border-radius: 4px;
+            padding: 1rem;
+            background: rgba(#fff, .1);
+            border: 1px solid rgba(#fff, .6);
+            text-align: center;
+
+            span {
+                display: inline-block;
+                padding: 0 1rem 0 .5rem;
+                margin: 0 .5rem 0 0;
+                border-right: 1px solid rgba(#fff, .6);
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            span:last-of-type {
+                border: 0;
+            }
+        }
+
+        &-lines {
+            position: absolute;
+            left: 0;
+            width: 75vw;
+            height: 100vh;
+            overflow: hidden;
+
+            .line {
+                display: none;
+            }
+        }
+
+        &-container {
+            position: relative;
+            z-index: 998;
+            width: 100vw;
+            height: auto;
+
+            .covers {
+                white-space: nowrap;
+                overflow: hidden;
+                z-index: 9;
+                margin: 5vh 0 0 0;
+
+                li {
+                    display: none;
+                    width: 100vw;
+
+                    img {
+                        width: 100%;
+                        border-top: 4vh solid rgba(#fff, .2);
+                        border-bottom: 4vh solid rgba(#fff, .2);
+                    }
+                }
+
+                li:first-of-type {
+                    display: block;
+                }
+            }
+
+            .content {
+                width: 70vw;
+                margin: 3vh auto;
+            }
+
+            h1 {
+                font: 3.5vh 'SH-E';
+                color: #fff;
+            }
+
+            .feature {
+                display: block;
+
+                .item {
+                    position: relative;
+                    padding: 0 0 0 9vw;
+                    margin: 3vh 0 0;
+                    opacity: .8;
+
+                    img {
+                        position: absolute;
+                        top: 1rem;
+                        left: 0;
+                        width: 8vw;
+                    }
+
+                    h2,
+                    h3,
+                    p {
+                        color: #fff;
+                    }
+
+                    h2 {
+                        font: 600 1.8rem 'Source Han Sans CN';
+                    }
+
+                    h3 {
+                        font: 1.2rem 'Arial';
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-type-noline {
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4.5rem;
+
+        // border-right: 1px solid #D9D9D9;
+        .entry-wrap {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 4.5rem;
+            padding: 1rem 0;
+
+            // border-top: 1px solid #D9D9D9;
+            .entry-icon {
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                margin: 1.5rem 0;
+                padding: 0 1.5rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .scroll-guide {
+            display: none;
+        }
+    }
+}

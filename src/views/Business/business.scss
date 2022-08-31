@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+    .wechat-code {
+        position: absolute;
+        top: 10vh;
+        left: calc(2.5vw + 4.5rem);
+        width: 10rem;
+
+        // text-align: center;
+        img {
+            width: 100%;
+        }
+
+        span {
+            display: inline-block;
+            font-size: 1.2rem;
+            color: rgba(#444, .7);
+            text-indent: .5rem;
+        }
+    }
+
+    .business {
+        &-container {
+            position: absolute;
+            left: 4.5rem;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            // background: rgba(red, .2);
+
+            .flex-content {
+                display: flex;
+                flex-flow: row nowrap;
+                height: 62vh;
+
+                .cover {
+                    position: relative;
+                    width: 58vw;
+                    height: 62vh;
+                    background-image: url(../../assets/img/business_cover.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: left bottom;
+
+                    .type {
+                        position: absolute;
+                        bottom: -2rem;
+                        width: 35%;
+                        background: rgba(#262626, 1);
+                        text-align: center;
+                        padding: 2rem 0;
+                        border-radius: 1rem;
+                        margin-left: 45%;
+
+                        span {
+                            font-size: 1.4rem;
+                            color: #fff;
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+
+                .content {
+                    align-self: flex-end;
+                    padding: 0 3vw 0 6vw;
+                    width: 32vw;
+
+                    i {
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        color: rgba(#444, .6);
+                    }
+
+                    h1 {
+                        font-size: 6rem;
+                        font-weight: bold;
+                    }
+
+                    h2 {
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .features {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                width: auto;
+                padding: 5rem 6vw 5rem 6vw;
+
+                .item {
+                    width: 24%;
+
+                    img {
+                        display: inline-block;
+                        height: 4.5vh;
+                        vertical-align: middle;
+                    }
+
+                    h3 {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        padding-left: 1rem;
+                    }
+
+                    i,
+                    p {
+                        display: block;
+                        padding-left: 4.5rem;
+                    }
+
+                    i {
+                        font-size: 1rem;
+                        color: rgba(#444, .6);
+                        font-weight: 300;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        padding-top: .5rem;
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .logo {
+                height: 6vh;
+                margin-left: 6vw;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            &-bg {
+                position: absolute;
+                top: -2vh;
+                left: 37vw;
+                height: 60vh;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
