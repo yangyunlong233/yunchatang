@@ -94,7 +94,9 @@
     <!-- copyright -->
     <div class="red-wall-copy" :style="{ opacity: copyOp }">
       <p class="add">中国·云南·昆明市盘龙区穿金路721号昆明煤矿机械总厂内6号地后端</p>
-      <p class="icp">©云茶堂新零售(云南)有限公司 滇ICP备16009188号</p>
+      <p class="icp">©云茶堂新零售(云南)有限公司 滇ICP备16009188号 <a
+          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=53010302001077" style="color: #fff;"
+          target="_blank">滇公网安备53010302001077号</a></p>
       <div class="contax">
         <p>合作招商：yunchatang_join@tianze.com</p>
         <p>市场团队（9:00~20:00）：+86 13888293923</p>
